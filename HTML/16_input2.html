@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input type="number"는 스핀박스(값을 키우거나 줄이는 데 사용하는) 기능이 있음 -->
+    <!-- number와 같이 쓰는 짝꿍들이 있음 min, max, value -->
+    <!-- value는 백엔드로 넘어가는 값임 -->
+    <!-- name을 넣어주면 name과 value의 데이터가 같이 넘어감 -->
+    <form method="get" action="test.php">
+        <input type="number" min="1" max="10" value="3" name="fruit" step="2">
+        <br>
+        <!-- range는 바를 통해서 수를 조절할 수 있음 -->
+        <!-- step은 얼마나 증가시키고 감소시킬지의 단위, 2로 넣으면 2씩 증가하고 2씩 감소함 -->
+        <input type="range" min="1" max="10" value="5" step="2">
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

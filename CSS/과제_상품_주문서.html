@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            font-weight: bold;
+            display:inline-block;
+            width: 70px;
+            padding-bottom: 10px;
+        }
+
+        .checkbox {
+            display:inline-block;
+            width:13px;
+            padding-bottom: 10px;
+        }
+
+        .container{
+            width: 520px;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            width: 150px;
+            margin:0 auto;
+        }
+
+        legend {
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        fieldset {
+            width:30em;
+            padding-left: 30px;
+            padding: 20px;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>상품 주문서</h1>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <label for="pi1" class="content">이름</label>
+            <input id="pi1" type="text" name="pi_name" placeholder="여백없이 입력">
+            <br>
+            <label for="pi2" class="content">연락처</label>
+            <input id="pi2" type="tel" name="pi_phone" placeholder="연락가능한 번호">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <label for="di1" class="content">주소</label>
+            <input id="di1" type="text" name="pi_address" size="40">
+            <br>
+            <label for="di2" class="content">전화번호</label>
+            <input id="di2" type="tel" name="pi_tel">
+            <br>
+            <label for="di3" class="content">메모</label>
+            <textarea></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>주문 정보</legend>
+            <input id="oi1" class="checkbox" type="checkbox" name="order1" value="과테말라 안티구아" >
+            <label for="oi1">과테말라 안티구아 (100g)</label>
+            <input id="oi1" type="text" name="oi1Count" size="3" min="0" value="0" >
+            <label for="oi1">개</label>
+            <br>
+            <input  id="oi2" class="checkbox" type="checkbox" name="order2" value="인도네시아 만델링">
+            <label for="oi2">인도네시아 만델링 (100g)</label>
+            <input id="oi2" type="text" name="oi2Count" size="3" min="0" value="0">
+            <label for="oi2">개</label>
+            <br>
+            <input  id="oi3" class="checkbox" type="checkbox" name="order2" value="탐라는도다(블렌딩)">
+            <label for="oi3">탐라는도다(블렌딩) (100g)</label>
+            <input id="oi3" type="text" name="oi3Count" size="3" min="0" value="0">
+            <label for="oi3">개</label>
+        </fieldset>
+        <br>
+        <div class="center">
+            <input type="submit" value="주문하기">
+            <input type="submit" value="다시 작성">
+        </div>
+    </div>
+</body>
+</html>

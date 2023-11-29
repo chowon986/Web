@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="login.php">
+        <!-- p 태그를 사용하면 자동 줄바꿈이 사용되어서 아래와 같이 써도 아래에 들어가게 됨 -->
+        <!-- <p>아이디</p><input type="text"> -->
+        <!-- <p>비밀번호</p><input type="password"> -->
+        <!-- <input type="submit" value="로그인"> -->
+        <!-- 옆에 붙이려면 어떻게 해야할까? -->
+        <!-- labeling 처리를 해서 너네는 한 덩어리야를 표시 해 줘야 함-->
+
+        <!-- 두 가지 방식이 있음 <label> 태그 안에 넣어주는 방식과 밖에 넣어주는 방식 -->
+        <!-- 근데 css 적용이 잘 안되기 때문에 보통 두번째 방식을 많이 사용함 -->
+
+        <!-- 여기는 for="name"을 빼줘도 되지만 -->
+        <label for="name">아이디
+            <input id="name" type="text">
+        </label>
+
+        <!-- 여기서는 for="passwd" 꼭 써줘야 함 -->
+        <label for="passwd">비밀번호</label>
+        <input id="passwd" type="password">
+        <input type="submit" value="로그인">
+    </form>
+</body>
+</html>

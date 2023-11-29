@@ -1,0 +1,9 @@
+/* 선택자 { 스타일 속성 : 속성값; } */
+h2 { 
+    color:blue; 
+}
+
+p { 
+    font-size: 40px; 
+    color: red; 
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="test.php">
+        <!-- 일반 텍스트 입력 -->
+        <input type="text">
+        <br>
+        <!-- 입력하면 .으로 나옴 -->
+        <input type="password">
+        <br>
+        <!-- text와 크게 다르진 않지만 입력을 하면 우측에 x표시가 나타나게 됨 -> 누르면 입력한 내용이 지워짐 -->
+        <input type="search">
+        <br>
+        <!-- 010-1111-1234와 같이 넣을 수 있음 -> 국제 표준이 다르기 때문에 사실 일반 텍스트와 크게 다른게 없음(제약 사항이 없음) -->
+        <input type="tel">
+        <br>
+        <!-- 제약 사항이 있음 http://나 https://를 붙여줘야함 -->
+        <input type="url">
+        <br>
+        <!-- 제약 사항이 있음 @를 붙여줘야함 -->
+        <input type="email">
+        <br>
+        <!-- 제출하기 버튼 -->
+        <input type="submit">
+    </form>
+</body>
+</html>
